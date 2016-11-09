@@ -47,7 +47,7 @@ class OSModel {
         Statistics.shared.simulationStartTime = Date()
     }
     
-    func stopSimulation() {
+    @objc func stopSimulation() {
         producers.forEach() { producer in producer.cancelAllOperations() }
         consumers.forEach() { consumer in consumer.cancelAllOperations() }
     }

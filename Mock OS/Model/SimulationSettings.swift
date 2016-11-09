@@ -18,4 +18,6 @@ struct SimulationSettings {
     var cpuServiceTime = 50
     var ioInterarrivalTime = 10
     var ioServiceTime = 5
+    var timeLimit: Int?
+    var simulatedTime = 0
 }

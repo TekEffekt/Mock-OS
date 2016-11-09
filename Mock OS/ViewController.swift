@@ -16,8 +16,15 @@ class SimulationSettingsController: UITableViewController {
     var activityHud: MBProgressHUD?
     @IBOutlet weak var fifoSwitch: UISwitch!
     @IBOutlet weak var shortestSwitch: UISwitch!
+    var timer: Timer?
     
     @IBAction func startSimulation(_ sender: AnyObject) {
+//        if let timeLimit = settings.timeLimit {
+//            let seconds = Double(Int(Double(timeLimit) * 0.1))
+//            print(seconds)
+//            perform(#selector(self.stopSimulation(_:)), with: nil, afterDelay: seconds)
+//        }
+        
         model = OSModel(withSettings: settings)
         model?.startSimulation()
         activityHud = MBProgressHUD.showAdded(to: navigationController!.view, animated: true)
@@ -95,6 +102,13 @@ class SimulationSettingsController: UITableViewController {
         }
     }
     
+    @IBAction func timeLimitChanged(_ sender: UISlider) {
+        settings.timeLimit = Int(sender.value)
+        
+        if sender.value == 0 {
+            settings.timeLimit = nil
+        }
+    }
     
 }
 

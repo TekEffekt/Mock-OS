@@ -22,7 +22,7 @@ class ProducerQueue: OperationQueue, JobQueue {
     func start() {
         running = true
         
-        addOperation { 
+        addOperation {
             while(self.running) {
                 self.simulateProductionTime()
             }

@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'Mock OS' do
 pod 'MBProgressHUD', '~> 1.0.0'
+
 end
 
