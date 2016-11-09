@@ -10,16 +10,18 @@ import Foundation
 
 class Statistics {
     
-    static let shared = Statistics()
+    static var shared = Statistics()
     
     var cpuWaitTimes: [Double] = []
     var cpuServiceTimes: [Double] = []
+    var cpuTurnaroundTimes: [Double] = []
     var ioWaitTimes: [Double] = []
     var ioServiceTimes: [Double] = []
+    var ioTurnaroundTimes: [Double] = []
     var jobsProcessed: Int = 0
     var simulationStartTime: Date?
     
-    var averageCpuWaitTimes: Double {
+    var averageCpuWaitTime: Double {
         let sum = cpuWaitTimes.reduce(0.0,+)
         return sum / Double(cpuWaitTimes.count)
     }
@@ -29,7 +31,12 @@ class Statistics {
         return sum / Double(cpuServiceTimes.count)
     }
     
-    var averageIoWaitTimes: Double {
+    var averageCpuTurnaroundTime: Double {
+        let sum = cpuTurnaroundTimes.reduce(0.0,+)
+        return sum / Double(cpuTurnaroundTimes.count)
+    }
+    
+    var averageIoWaitTime: Double {
         let sum = ioWaitTimes.reduce(0.0,+)
         return sum / Double(ioWaitTimes.count)
     }
@@ -37,6 +44,11 @@ class Statistics {
     var averageIoServiceTime: Double {
         let sum = ioServiceTimes.reduce(0.0,+)
         return sum / Double(ioServiceTimes.count)
+    }
+    
+    var averageIoTurnaroundTime: Double {
+        let sum = ioTurnaroundTimes.reduce(0.0,+)
+        return sum / Double(ioTurnaroundTimes.count)
     }
     
     var processorUtilization: Double {
@@ -52,4 +64,7 @@ class Statistics {
         let result = totalTime / Double(jobsProcessed)
         return Double(round(1000*result)/1000)
     }
+    
+    
+    
 }

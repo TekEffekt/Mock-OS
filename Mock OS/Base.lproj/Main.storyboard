@@ -346,6 +346,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="fifoSwitch" destination="KTg-dm-pwf" id="N4f-6t-Ioc"/>
+                        <outlet property="shortestSwitch" destination="VX5-dr-AuS" id="KKV-0f-fSn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PM6-fQ-lBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

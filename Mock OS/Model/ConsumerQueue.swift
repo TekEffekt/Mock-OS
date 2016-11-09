@@ -47,9 +47,11 @@ class ConsumerQueue: OperationQueue, JobQueue {
         case .cpu:
             Statistics.shared.cpuWaitTimes.append(waitTime)
             Statistics.shared.cpuServiceTimes.append(serviceTime)
+            Statistics.shared.cpuTurnaroundTimes.append(waitTime + serviceTime)
         case .io:
             Statistics.shared.ioWaitTimes.append(waitTime)
             Statistics.shared.ioServiceTimes.append(serviceTime)
+            Statistics.shared.ioTurnaroundTimes.append(waitTime + serviceTime)
         }
         Statistics.shared.jobsProcessed += 1
     }
