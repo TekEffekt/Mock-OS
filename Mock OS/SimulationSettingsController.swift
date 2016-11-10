@@ -96,6 +96,8 @@ class SimulationSettingsController: UITableViewController {
         if sender.value == 0 {
             settings.timeLimit = nil
         }
+        
+        updateLabel(withValue: settings.timeLimit ?? 0, andSender: sender)
     }
     
     @IBAction func randomnessSwitchChanged(_ sender: UISwitch) {

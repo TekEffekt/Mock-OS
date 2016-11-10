@@ -346,7 +346,6 @@
                                                     <frame key="frameInset" minX="63" minY="6" width="259" height="31"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
-                                                        <action selector="ioProducerNumberChanged:" destination="faX-si-82D" eventType="valueChanged" id="V8P-kq-gMq"/>
                                                         <action selector="timeLimitChanged:" destination="faX-si-82D" eventType="valueChanged" id="ndr-kp-mFF"/>
                                                     </connections>
                                                 </slider>
