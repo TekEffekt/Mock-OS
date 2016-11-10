@@ -10,5 +10,6 @@ import Foundation
 
 protocol JobQueue {
     var buffer: JobBuffer { get }
+    var random: Bool { get }
     func start()
 }

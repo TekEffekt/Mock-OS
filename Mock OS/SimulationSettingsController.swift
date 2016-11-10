@@ -16,14 +16,13 @@ class SimulationSettingsController: UITableViewController {
     var activityHud: MBProgressHUD?
     @IBOutlet weak var fifoSwitch: UISwitch!
     @IBOutlet weak var shortestSwitch: UISwitch!
-    var timer: Timer?
     
     @IBAction func startSimulation(_ sender: AnyObject) {
-//        if let timeLimit = settings.timeLimit {
-//            let seconds = Double(Int(Double(timeLimit) * 0.1))
-//            print(seconds)
-//            perform(#selector(self.stopSimulation(_:)), with: nil, afterDelay: seconds)
-//        }
+        if let timeLimit = settings.timeLimit {
+            let seconds = Double(Int(Double(timeLimit) * 0.1))
+            print(seconds)
+            Timer.scheduledTimer(timeInterval: seconds, target: self, selector: #selector(self.stopSimulation(_:)), userInfo: nil, repeats: false)
+        }
         
         model = OSModel(withSettings: settings)
         model?.startSimulation()
@@ -34,20 +33,9 @@ class SimulationSettingsController: UITableViewController {
     
     @IBAction func stopSimulation(_ sender: AnyObject) {
         model?.stopSimulation()
-        print("Average CPU waiting time: \(Statistics.shared.averageCpuWaitTime)")
-        print("Average IO waiting time: \(Statistics.shared.averageIoWaitTime)")
-        
-        print("Average CPU service time: \(Statistics.shared.averageCpuServiceTime)")
-        print("Average IO service time: \(Statistics.shared.averageIoServiceTime)")
-        
-        print("Average CPU turnaround time: \(Statistics.shared.averageCpuTurnaroundTime)")
-        print("Average IO turnaround time: \(Statistics.shared.averageIoTurnaroundTime)")
-        
-        print("Processor Utilization: \(Statistics.shared.processorUtilization)%")
-        print("Processor Throughout: \(Statistics.shared.processorThroughput) per second")
         
         activityHud?.hide(animated: true)
-        Statistics.shared = Statistics()
+        performSegue(withIdentifier: "Show Results", sender: self)
     }
 
     @IBAction func fifoSwitchChanged(_ sender: UISwitch) {
@@ -110,5 +98,8 @@ class SimulationSettingsController: UITableViewController {
         }
     }
     
+    @IBAction func randomnessSwitchChanged(_ sender: UISwitch) {
+        settings.randomness = sender.isOn
+    }
 }
 

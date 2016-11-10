@@ -24,15 +24,15 @@ class OSModel {
         jobBuffer = JobBuffer(withAlgorithm: algorithm)
         
         for _ in 1...settings.ioProducerNumber {
-            producers.append(ProducerQueue(withBuffer: jobBuffer, andType: .io))
+            producers.append(ProducerQueue(withBuffer: jobBuffer, andType: .io, andRandom: settings.randomness))
         }
         
         for _ in 1...settings.cpuProducerNumber {
-            producers.append(ProducerQueue(withBuffer: jobBuffer, andType: .cpu))
+            producers.append(ProducerQueue(withBuffer: jobBuffer, andType: .cpu, andRandom: settings.randomness))
         }
         
         for _ in 1...settings.consumerNumber {
-            consumers.append(ConsumerQueue(withBuffer: jobBuffer))
+            consumers.append(ConsumerQueue(withBuffer: jobBuffer, andRandom: settings.randomness))
         }
         
         SleepUtilities.cpuProcessUnits = settings.cpuServiceTime

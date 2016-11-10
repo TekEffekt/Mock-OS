@@ -37,7 +37,7 @@
                             <tableViewSection headerTitle="Algorithm" footerTitle="" id="AnU-Co-tQv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="7qC-Yd-bbb">
-                                        <rect key="frame" x="0.0" y="119.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7qC-Yd-bbb" id="pJI-gp-0dC">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -63,7 +63,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="NlF-Ke-hr2">
-                                        <rect key="frame" x="0.0" y="163.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="164" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NlF-Ke-hr2" id="7jt-fH-2d4">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -93,7 +93,7 @@
                             <tableViewSection headerTitle="Number of Producers" id="S71-2R-skR">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="a6b-bf-iYc">
-                                        <rect key="frame" x="0.0" y="263.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="265" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="a6b-bf-iYc" id="fF1-06-Lnj">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -126,7 +126,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="cG4-Ks-8fk">
-                                        <rect key="frame" x="0.0" y="307.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="309" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cG4-Ks-8fk" id="YyL-4h-9Nm">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -163,7 +163,7 @@
                             <tableViewSection headerTitle="Number of Consumers" id="9S0-Dj-oYQ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="shv-O1-4Ti">
-                                        <rect key="frame" x="0.0" y="407.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="410" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shv-O1-4Ti" id="20P-09-zo3">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -191,7 +191,7 @@
                             <tableViewSection headerTitle="Service Time" id="onC-My-LQd">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ort-PX-bmN">
-                                        <rect key="frame" x="0.0" y="507.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="511" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ort-PX-bmN" id="O6H-dP-4Ja">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -224,7 +224,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Yu4-4J-lFH">
-                                        <rect key="frame" x="0.0" y="551.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="555" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yu4-4J-lFH" id="cLk-gE-8d0">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -261,7 +261,7 @@
                             <tableViewSection headerTitle="Interarrival Time" id="zKV-vI-orx">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="ypC-NJ-ziS">
-                                        <rect key="frame" x="0.0" y="651.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="656" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ypC-NJ-ziS" id="upm-k1-i4v">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -294,7 +294,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="scu-tU-se2">
-                                        <rect key="frame" x="0.0" y="695.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="700" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="scu-tU-se2" id="g6b-XM-wSD">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -331,7 +331,7 @@
                             <tableViewSection headerTitle="Time Limit" footerTitle="If zero then there is no limit" id="dsw-JS-TuP">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="q9h-F3-jFV">
-                                        <rect key="frame" x="0.0" y="803" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="808" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q9h-F3-jFV" id="JYY-Ti-dN8">
                                             <frame key="frameInset" width="375" height="43.5"/>
@@ -366,6 +366,37 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="Randomness" footerTitle="" id="koT-nW-6Hp">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="gb8-ho-hYw">
+                                        <rect key="frame" x="0.0" y="928" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gb8-ho-hYw" id="9Tf-cs-GYt">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apply randomness" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-ZG-RgL">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SWY-t3-2gh">
+                                                    <connections>
+                                                        <action selector="fifoSwitchChanged:" destination="faX-si-82D" eventType="valueChanged" id="FTj-2E-Gag"/>
+                                                        <action selector="randomnessSwitchChanged:" destination="faX-si-82D" eventType="valueChanged" id="Qkn-va-14H"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SWY-t3-2gh" firstAttribute="centerY" secondItem="9Tf-cs-GYt" secondAttribute="centerY" id="SNc-XK-b8V"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="zTo-ZG-RgL" secondAttribute="leading" id="XhC-co-yBg"/>
+                                                <constraint firstItem="zTo-ZG-RgL" firstAttribute="centerY" secondItem="9Tf-cs-GYt" secondAttribute="centerY" id="cPr-AZ-Kik"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="SWY-t3-2gh" secondAttribute="trailing" id="j9m-L2-1jp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="faX-si-82D" id="UJu-8w-eE2"/>
@@ -387,11 +418,47 @@
                     <connections>
                         <outlet property="fifoSwitch" destination="KTg-dm-pwf" id="N4f-6t-Ioc"/>
                         <outlet property="shortestSwitch" destination="VX5-dr-AuS" id="KKV-0f-fSn"/>
+                        <segue destination="QRr-fe-Hpl" kind="show" identifier="Show Results" id="tSM-ac-gSu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PM6-fQ-lBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1016.8" y="-545.57721139430294"/>
+        </scene>
+        <!--Results-->
+        <scene sceneID="pDV-IU-l4c">
+            <objects>
+                <viewController id="QRr-fe-Hpl" customClass="ResultsViewController" customModule="Mock_OS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="z8r-nY-jDm"/>
+                        <viewControllerLayoutGuide type="bottom" id="O9x-nE-gG8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7qW-3w-zUy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wOT-q7-uR9">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O9x-nE-gG8" firstAttribute="top" secondItem="wOT-q7-uR9" secondAttribute="bottom" id="4zK-4a-gvn"/>
+                            <constraint firstItem="wOT-q7-uR9" firstAttribute="top" secondItem="z8r-nY-jDm" secondAttribute="bottom" constant="8" id="TlT-so-m0n"/>
+                            <constraint firstItem="wOT-q7-uR9" firstAttribute="leading" secondItem="7qW-3w-zUy" secondAttribute="leadingMargin" id="cO2-hI-YSS"/>
+                            <constraint firstItem="wOT-q7-uR9" firstAttribute="trailing" secondItem="7qW-3w-zUy" secondAttribute="trailingMargin" id="seP-jw-01b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Results" id="aFq-Tq-Bte"/>
+                    <connections>
+                        <outlet property="resultView" destination="wOT-q7-uR9" id="s5j-Sx-UDC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yM-x3-MZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864.8" y="-545.57721139430294"/>
         </scene>
     </scenes>
 </document>

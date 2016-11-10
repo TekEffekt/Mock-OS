@@ -16,7 +16,7 @@ class SleepUtilities {
     static var ioProcessUnits = 5
     static var cpuProcessUnits = 50
     
-    static func sleep(forTime timeUnits: Int) {
+    static func sleep(forTime timeUnits: Double) {
         Thread.sleep(forTimeInterval: Double(timeUnits) * 0.1)
     }
     

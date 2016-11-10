@@ -13,10 +13,12 @@ class ProducerQueue: OperationQueue, JobQueue {
     var buffer: JobBuffer
     var running = false
     var jobType: JobType
+    var random: Bool
     
-    init(withBuffer buffer: JobBuffer, andType jobType: JobType) {
+    init(withBuffer buffer: JobBuffer, andType jobType: JobType, andRandom random: Bool) {
         self.buffer = buffer
         self.jobType = jobType
+        self.random = random
     }
     
     func start() {
@@ -32,11 +34,13 @@ class ProducerQueue: OperationQueue, JobQueue {
     func simulateProductionTime() {
         produce()
         
+        let offset = random ? RandomGenerator.generate() : 1.0
+        
         switch self.jobType {
         case .cpu:
-            SleepUtilities.sleep(forTime: SleepUtilities.cpuSleepUnits)
+            SleepUtilities.sleep(forTime: Double(SleepUtilities.cpuSleepUnits) * offset)
         case .io:
-            SleepUtilities.sleep(forTime: SleepUtilities.cpuSleepUnits)
+            SleepUtilities.sleep(forTime: Double(SleepUtilities.cpuSleepUnits) * offset)
         }
     }
     

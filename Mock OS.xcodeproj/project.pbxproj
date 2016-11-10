@@ -10,7 +10,7 @@
 		9274D678582488B2818AD392 /* Pods_Mock_OS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99343D118786D629594864B /* Pods_Mock_OS.framework */; };
 		B62E18C91DD3B60E00A12C7A /* SimulationSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62E18C81DD3B60E00A12C7A /* SimulationSettings.swift */; };
 		B655A5F01DD22B1400401155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A5EF1DD22B1400401155 /* AppDelegate.swift */; };
-		B655A5F21DD22B1400401155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A5F11DD22B1400401155 /* ViewController.swift */; };
+		B655A5F21DD22B1400401155 /* SimulationSettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A5F11DD22B1400401155 /* SimulationSettingsController.swift */; };
 		B655A5F51DD22B1400401155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B655A5F31DD22B1400401155 /* Main.storyboard */; };
 		B655A5F71DD22B1400401155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B655A5F61DD22B1400401155 /* Assets.xcassets */; };
 		B655A5FA1DD22B1400401155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B655A5F81DD22B1400401155 /* LaunchScreen.storyboard */; };
@@ -27,6 +27,8 @@
 		B655A6271DD26EBB00401155 /* OSModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A6261DD26EBB00401155 /* OSModel.swift */; };
 		B655A6291DD287A500401155 /* JobType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A6281DD287A500401155 /* JobType.swift */; };
 		B655A62B1DD2E08100401155 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B655A62A1DD2E08100401155 /* Statistics.swift */; };
+		B6A9B8111DD3F0250033D5F7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9B8101DD3F0250033D5F7 /* ResultsViewController.swift */; };
+		B6A9B8151DD3FFA50033D5F7 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A9B8141DD3FFA50033D5F7 /* RandomGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +37,7 @@
 		B62E18C81DD3B60E00A12C7A /* SimulationSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationSettings.swift; sourceTree = "<group>"; };
 		B655A5EC1DD22B1400401155 /* Mock OS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mock OS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B655A5EF1DD22B1400401155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B655A5F11DD22B1400401155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B655A5F11DD22B1400401155 /* SimulationSettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationSettingsController.swift; sourceTree = "<group>"; };
 		B655A5F41DD22B1400401155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B655A5F61DD22B1400401155 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B655A5F91DD22B1400401155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		B655A6261DD26EBB00401155 /* OSModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSModel.swift; sourceTree = "<group>"; };
 		B655A6281DD287A500401155 /* JobType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobType.swift; sourceTree = "<group>"; };
 		B655A62A1DD2E08100401155 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		B6A9B8101DD3F0250033D5F7 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		B6A9B8141DD3FFA50033D5F7 /* RandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 		E99343D118786D629594864B /* Pods_Mock_OS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mock_OS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				B655A5EF1DD22B1400401155 /* AppDelegate.swift */,
-				B655A5F11DD22B1400401155 /* ViewController.swift */,
+				B655A5F11DD22B1400401155 /* SimulationSettingsController.swift */,
+				B6A9B8101DD3F0250033D5F7 /* ResultsViewController.swift */,
 				B655A5F31DD22B1400401155 /* Main.storyboard */,
 				B655A5F61DD22B1400401155 /* Assets.xcassets */,
 				B655A5F81DD22B1400401155 /* LaunchScreen.storyboard */,
@@ -131,6 +136,7 @@
 				B655A61A1DD2342700401155 /* ProducerQueue.swift */,
 				B655A61C1DD2343300401155 /* ConsumerQueue.swift */,
 				B655A6111DD233F200401155 /* Jobs */,
+				B6A9B8141DD3FFA50033D5F7 /* RandomGenerator.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -273,17 +279,19 @@
 			files = (
 				B655A6231DD244E900401155 /* JobBuffer.swift in Sources */,
 				B655A6251DD2462B00401155 /* Algorithm.swift in Sources */,
-				B655A5F21DD22B1400401155 /* ViewController.swift in Sources */,
+				B655A5F21DD22B1400401155 /* SimulationSettingsController.swift in Sources */,
 				B655A6291DD287A500401155 /* JobType.swift in Sources */,
 				B655A6181DD233F200401155 /* Job.swift in Sources */,
 				B655A61B1DD2342700401155 /* ProducerQueue.swift in Sources */,
 				B655A5F01DD22B1400401155 /* AppDelegate.swift in Sources */,
+				B6A9B8111DD3F0250033D5F7 /* ResultsViewController.swift in Sources */,
 				B655A6161DD233F200401155 /* CPUBoundJob.swift in Sources */,
 				B655A6271DD26EBB00401155 /* OSModel.swift in Sources */,
 				B62E18C91DD3B60E00A12C7A /* SimulationSettings.swift in Sources */,
 				B655A6171DD233F200401155 /* IOBoundJob.swift in Sources */,
 				B655A6191DD233F200401155 /* JobState.swift in Sources */,
 				B655A61D1DD2343300401155 /* ConsumerQueue.swift in Sources */,
+				B6A9B8151DD3FFA50033D5F7 /* RandomGenerator.swift in Sources */,
 				B655A6211DD2354C00401155 /* SleepUtilities.swift in Sources */,
 				B655A62B1DD2E08100401155 /* Statistics.swift in Sources */,
 				B655A61F1DD2344800401155 /* JobQueue.swift in Sources */,

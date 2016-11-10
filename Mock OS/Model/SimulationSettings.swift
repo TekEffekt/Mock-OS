@@ -20,4 +20,5 @@ struct SimulationSettings {
     var ioServiceTime = 5
     var timeLimit: Int?
     var simulatedTime = 0
+    var randomness = false
 }

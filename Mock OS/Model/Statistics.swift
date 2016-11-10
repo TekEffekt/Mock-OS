@@ -55,7 +55,7 @@ class Statistics {
         guard let startTime = simulationStartTime else { return 0 }
         let totalProcessingTime = cpuServiceTimes.reduce(0.0,+) + ioServiceTimes.reduce(0.0,+)
         let result = totalProcessingTime / Date().timeIntervalSince(startTime)
-        return Double(round(1000*result)/1000) * 100
+        return (Double(round(1000*result)/1000) * 100)
     }
     
     var processorThroughput: Double {

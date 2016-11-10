@@ -12,9 +12,11 @@ class ConsumerQueue: OperationQueue, JobQueue {
     
     var buffer: JobBuffer
     var running = false
+    var random: Bool
     
-    init(withBuffer buffer: JobBuffer) {
+    init(withBuffer buffer: JobBuffer, andRandom random: Bool) {
         self.buffer = buffer
+        self.random = random
     }
     
     func start() {
@@ -31,9 +33,10 @@ class ConsumerQueue: OperationQueue, JobQueue {
     }
     
     func consume(job: Job) {
+        let offset = random ? RandomGenerator.generate() : 1.0
         let waitTime = Date().timeIntervalSince(job.requestTime)
         let startOfProcessTime = Date()
-        SleepUtilities.sleep(forTime: job.processTime)
+        SleepUtilities.sleep(forTime: Double(job.processTime) * offset)
         let serviceTime = Date().timeIntervalSince(startOfProcessTime)
         
         print("Job Processed - ")
