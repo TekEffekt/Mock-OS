@@ -40,7 +40,7 @@ class ProducerQueue: OperationQueue, JobQueue {
         case .cpu:
             SleepUtilities.sleep(forTime: Double(SleepUtilities.cpuSleepUnits) * offset)
         case .io:
-            SleepUtilities.sleep(forTime: Double(SleepUtilities.cpuSleepUnits) * offset)
+            SleepUtilities.sleep(forTime: Double(SleepUtilities.ioSleepUnits) * offset)
         }
     }
     

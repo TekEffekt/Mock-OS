@@ -12,6 +12,7 @@ class Statistics {
     
     static var shared = Statistics()
     
+    // In Units
     var cpuWaitTimes: [Double] = []
     var cpuServiceTimes: [Double] = []
     var cpuTurnaroundTimes: [Double] = []
@@ -23,49 +24,61 @@ class Statistics {
     
     var averageCpuWaitTime: Double {
         let sum = cpuWaitTimes.reduce(0.0,+)
-        return sum / Double(cpuWaitTimes.count)
+        let result = sum / Double(cpuWaitTimes.count)
+        return secondsToUnits(seconds: result)
     }
     
     var averageCpuServiceTime: Double {
         let sum = cpuServiceTimes.reduce(0.0,+)
-        return sum / Double(cpuServiceTimes.count)
+        let result = sum / Double(cpuServiceTimes.count)
+        return secondsToUnits(seconds: result)
     }
     
     var averageCpuTurnaroundTime: Double {
         let sum = cpuTurnaroundTimes.reduce(0.0,+)
-        return sum / Double(cpuTurnaroundTimes.count)
+        let result = sum / Double(cpuTurnaroundTimes.count)
+        return secondsToUnits(seconds: result)
     }
     
     var averageIoWaitTime: Double {
         let sum = ioWaitTimes.reduce(0.0,+)
-        return sum / Double(ioWaitTimes.count)
+        let result = sum / Double(ioWaitTimes.count)
+        return secondsToUnits(seconds: result)
     }
     
     var averageIoServiceTime: Double {
         let sum = ioServiceTimes.reduce(0.0,+)
-        return sum / Double(ioServiceTimes.count)
+        let result = sum / Double(ioServiceTimes.count)
+        return secondsToUnits(seconds: result)
     }
     
     var averageIoTurnaroundTime: Double {
         let sum = ioTurnaroundTimes.reduce(0.0,+)
-        return sum / Double(ioTurnaroundTimes.count)
+        let result = sum / Double(ioTurnaroundTimes.count)
+        return secondsToUnits(seconds: result)
     }
     
     var processorUtilization: Double {
         guard let startTime = simulationStartTime else { return 0 }
         let totalProcessingTime = cpuServiceTimes.reduce(0.0,+) + ioServiceTimes.reduce(0.0,+)
-        let result = totalProcessingTime / Date().timeIntervalSince(startTime)
+        let totalSimulationTime = Date().timeIntervalSince(startTime)
+        print(startTime)
+        print(totalProcessingTime)
+        print(totalSimulationTime)
+        let result = totalProcessingTime / totalSimulationTime
         let answer = (Double(round(1000*result)/1000) * 100)
-        return answer > 99.9 ? 99.9 : answer
+        return answer
     }
     
     var processorThroughput: Double {
         guard let startTime = simulationStartTime else { return 0 }
         let totalTime = Date().timeIntervalSince(startTime)
-        let result = totalTime / Double(jobsProcessed)
+        let result =  Double(jobsProcessed) / totalTime
         return Double(round(1000*result)/1000)
     }
     
-    
+    func secondsToUnits(seconds: Double) -> Double {
+        return seconds / 0.1
+    }
     
 }

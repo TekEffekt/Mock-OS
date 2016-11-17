@@ -13,10 +13,12 @@ class ConsumerQueue: OperationQueue, JobQueue {
     var buffer: JobBuffer
     var running = false
     var random: Bool
+    var consumerNumber: Double = 1
     
-    init(withBuffer buffer: JobBuffer, andRandom random: Bool) {
+    init(withBuffer buffer: JobBuffer, andRandom random: Bool, andConsumerNumber consumers: Int) {
         self.buffer = buffer
         self.random = random
+        self.consumerNumber = Double(consumers)
     }
     
     func start() {
@@ -34,15 +36,16 @@ class ConsumerQueue: OperationQueue, JobQueue {
     
     func consume(job: Job) {
         let offset = random ? RandomGenerator.generate() : 1.0
-        let waitTime = Date().timeIntervalSince(job.requestTime)
-        let startOfProcessTime = Date()
+        let waitTime = (Date().timeIntervalSince(job.requestTime))
+        let beforeServiceDate = Date()
         SleepUtilities.sleep(forTime: Double(job.processTime) * offset)
-        let serviceTime = Date().timeIntervalSince(startOfProcessTime)
+        let serviceTime = Date().timeIntervalSince(beforeServiceDate)
+        print(" Service Time \(serviceTime)")
         
         print("Job Processed - ")
         print(job.description + " Wait Time: \(waitTime)")
         
-        updateStatistics(withJob: job, andWaitTime: waitTime, andServiceTime: serviceTime)
+        updateStatistics(withJob: job, andWaitTime: waitTime, andServiceTime: Double(serviceTime))
     }
     
     private func updateStatistics(withJob job: Job, andWaitTime waitTime: Double, andServiceTime serviceTime: Double) {

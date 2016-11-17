@@ -23,7 +23,7 @@ class JobBuffer {
         lock.lock()
         
         jobs.append(job)
-        print("Job produced")
+        print("Job produced Count:\(jobs.count)")
         
         lock.unlock()
     }
@@ -43,6 +43,8 @@ class JobBuffer {
                 let cpuJobs = jobs.filter(){ job in job.type == .io ? true : false }
                 job = cpuJobs.first!
             }
+            
+            print("Job consumed Count:\(jobs.count)")
         }
         
         lock.unlock()
